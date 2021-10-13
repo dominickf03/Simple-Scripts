@@ -1,4 +1,7 @@
 REM Simple File Organizer That Sorts Every File Besides Shortcuts, Bat files, and VBS files
+REM Make Sure You Have rp.vbs In The Same Directory
+REM If not it should move it to the current folder
+
 @setlocal & @(for %%I in (*.*) do @set /a ext[%%~xI] += 0) & set ext[ > txt.lnk
 mkdir Files
 type txt.lnk
