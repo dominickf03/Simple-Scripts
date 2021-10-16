@@ -3,8 +3,12 @@ REM Make Sure You Have rp.vbs In The Same Directory
 REM If not it should move it to the current folder
 REM Please report any bugs
 
-:verytop
 @echo off
+if not exist files\data.txt (
+goto oopss
+exit
+)
+:verytop
 net session >nul 2>&1
 if %errorlevel%==0 (
   echo Please Dont Run This Program As Administrator!!!
@@ -106,3 +110,24 @@ echo.
 echo Process Complete!!!
 echo.
 pause
+exit
+
+:oopss
+@echo off
+cls
+echo Is %CD%\ the directory you want cleaned?
+echo.
+set /p sss=(Y) or (N):
+if %sss%==y goto okaa
+if %sss%==Y goto okaa
+if %sss%==N goto okno
+if %sss%==n goto okno
+goto oopss
+:okaa
+echo. > Files/data.txt
+goto verytop
+:okno
+echo.
+echo Please move rp.vbs and Clean.bat to the directory you want cleaned.
+pause
+exit
