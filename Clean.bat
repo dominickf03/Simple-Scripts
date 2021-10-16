@@ -1,16 +1,11 @@
 REM Simple File Organizer That Sorts Every File Besides Shortcuts, Bat files, and VBS files
 REM Make Sure You Have rp.vbs In The Same Directory
 REM If not it should move it to the current folder
+REM Please report any bugs
 
+:verytop
 @echo off
-echo. > bruh.vbs
-echo. > before.vbs
-echo. > after.vbs
-decho. > a.vbs
-echo. > Files.vbs
-echo. > txt.lnk
 set nums = 0
-dir /b /A:-D > before.vbs
 set curdir=%CD%
 set curdir=%curdir:\=/%
 echo %curdir%
@@ -23,14 +18,18 @@ if not exist rp.vbs (
 		cls
 		goto orgq
 	) else (
-		cls
-		echo Error, rp.vbs not found in this directory!!!
-		pause
-		goto top
+		goto oopslol
 	)
 )
 
 :orgq
+echo. > bruh.vbs
+echo. > before.vbs
+echo. > after.vbs
+decho. > a.vbs
+echo. > Files.vbs
+echo. > txt.lnk
+dir /b /A:-D > before.vbs
 @setlocal & @(for %%I in (*.*) do @set /a ext[%%~xI] += 0) & set ext[ > txt.lnk
 mkdir Files
 type txt.lnk
@@ -78,3 +77,27 @@ del Files.vbs
 del txt.lnk
 notepad Files/log.txt && exit
 exit
+
+:oopslol
+cls
+color 0c
+echo ++++++++++++++++++++++++++++++++++++++++
+echo + Error, rp.vbs not found!!!           + 
+echo + rp.vbs can be downloaded from github + 
+echo + and can be put in this directory,    +
+echo + Downloads, or Documents folder.      +     
+echo ++++++++++++++++++++++++++++++++++++++++
+echo.
+set /p youdown=Download (Y) or (N):
+if %youdown%==y goto dwnn
+if %youdown%==Y goto dwnn
+if %youdown%==N exit
+if %youdown%==n exit
+goto top
+:dwnn
+echo Downloading...
+powershell Invoke-WebRequest https://raw.githubusercontent.com/dominickf03/MSDOS-Scripts-Simple-/main/rp.vbs -OutFile C:\Users\%username%\Desktop\rp.vbs
+echo.
+echo Process Complete!!!
+echo.
+pause
