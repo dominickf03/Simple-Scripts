@@ -97,4 +97,4 @@ echo Downloading...
 powershell Invoke-WebRequest https://raw.githubusercontent.com/dominickf03/MSDOS-Scripts-Simple-/main/rp.vbs -OutFile C:\Users\%username%\Desktop\rp.vbs
 echo.
 echo Process Complete!!!
-pause
+pause>NUL
