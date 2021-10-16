@@ -5,6 +5,13 @@ REM Please report any bugs
 
 :verytop
 @echo off
+net session >nul 2>&1
+if %errorlevel%==0 (
+  echo Please Dont Run This Program As Administrator!!!
+  echo.
+  pause
+  exit
+)
 set nums = 0
 set curdir=%CD%
 set curdir=%curdir:\=/%
@@ -97,4 +104,5 @@ echo Downloading...
 powershell Invoke-WebRequest https://raw.githubusercontent.com/dominickf03/MSDOS-Scripts-Simple-/main/rp.vbs -OutFile C:\Users\%username%\Desktop\rp.vbs
 echo.
 echo Process Complete!!!
-pause>NUL
+echo.
+pause
