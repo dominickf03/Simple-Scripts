@@ -21,7 +21,6 @@ if not exist rp.vbs (
 		goto oopslol
 	)
 )
-
 :orgq
 echo. > bruh.vbs
 echo. > before.vbs
@@ -77,7 +76,6 @@ del Files.vbs
 del txt.lnk
 notepad Files/log.txt && exit
 exit
-
 :oopslol
 cls
 color 0c
