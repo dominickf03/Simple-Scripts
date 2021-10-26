@@ -36,7 +36,7 @@ if not exist rp.vbs (
 echo. > bruh.vbs
 echo. > before.vbs
 echo. > after.vbs
-decho. > a.vbs
+echo. > a.vbs
 echo. > Files.vbs
 echo. > txt.lnk
 dir /b /A:-D > before.vbs
