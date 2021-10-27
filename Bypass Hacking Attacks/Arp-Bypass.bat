@@ -19,5 +19,6 @@ echo Please verify that your routers ip is %ipvr% and your routers mac address i
 pause
 echo.
 netsh interface ipv4 add neighbors "Wi-Fi" %ipvr% %mcvr%
-if %errorlevel%==1 echo please reopen as administrator!!! && echo.
+if %errorlevel%==1 echo error!!! && echo.
+if %errorlevel%==0 echo Successfully changed interface router information!!! && echo.
 pause
