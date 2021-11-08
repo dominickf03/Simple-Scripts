@@ -1,3 +1,5 @@
+<img src="https://capsule-render.vercel.app/api?type=slice&color=07b1ff&height=315&section=header&text=Simple%20MSDOS%20Scripts&fontSize=60&fontColor=07ff1a" /></img>
+<br />
 # MSDOS-Scripts-Simple-
 File Cleaner Script
 <br />
