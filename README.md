@@ -10,4 +10,5 @@ File Cleaner Script
   + This script moves all of the files besides .bat, .vbs, and .lnk(shortcuts) to their extensions file in Files/. So if it moves test.png, it would be located at ~\Files\png\test.png
   + It can do bulk moving fast
 
-<p style='color:green'>Everything That I Post Is OpenSource</p>
+<br />
+<h2>Anything I Post On Github Is OpenSource</h2>
