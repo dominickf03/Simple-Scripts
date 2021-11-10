@@ -156,9 +156,14 @@ echo       THIS COULD BE A MAN-IN-THE-MIDDLE ATTACK!!!!
 echo       Do you want to set router rules so you can bypass the attack and prevent another attack?
 set /p chi=(y) or (n):
 if %chi%==y goto setipmac
+if %chi%==Y goto setipmac
+if %chi%==N exit
+if %chi%==n exit
 goto haschanged
 exit
 
 :setipmac
 netsh interface ipv4 add neighbors "Wi-Fi" %ipaddressvalue% %macaddressvalue%
+echo Values have been set!
 pause
+exit
