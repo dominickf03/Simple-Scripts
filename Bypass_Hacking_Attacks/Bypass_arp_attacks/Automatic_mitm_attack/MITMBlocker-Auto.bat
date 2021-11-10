@@ -64,7 +64,6 @@ echo please restart the program
 pause
 exit
 
-
 :manualaa
 cls
 set /p macaddr=(0-0-0-0-0-0-0) Router mac Address:
@@ -77,10 +76,6 @@ echo data has been set!
 echo please restart the program
 pause
 exit
-
-
-
-
 
 :getipmac
 Powershell -noprofile -executionpolicy bypass -file "gdg.ps1" > gt.lnk
@@ -110,8 +105,6 @@ del mgt.lnk
 del gt.lnk
 goto existdatafile
 
-
-
 :existdatafile
 set p=y
 cls
@@ -127,7 +120,6 @@ if %p%==b goto haschanged
 
 timeout 15
 goto getipmac
-
 
 :haschanged
 echo --------------------------------------------- >> arpData/detectionLog.txt
@@ -149,9 +141,6 @@ if %chi%==y goto setipmac
 goto haschanged
 exit
 
-
 :setipmac
 netsh interface ipv4 add neighbors "Wi-Fi" %ipaddressvalue% %macaddressvalue%
 pause
-
-
