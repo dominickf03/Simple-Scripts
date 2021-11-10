@@ -22,7 +22,11 @@ This script detects default router mac and ip address and scans for any fake acc
 <h1>Simple Bruteforce Wordlist Generator</h1>
 <h3>What does this script do?</h3>
 Generates many different variations of text given and saves it to a wordlist that can be used for bruteforcing purposes. Please do not use this script maliciously!<br />
-
+<h1>Simple Discord to batch file</h1>
+<h3>How to use:</h3>
+Sign up for IFTTT at https://ifttt.com/, then goto My Applets on the IFTTT dashboard. Click "Create" at the top right corner. Click where it says "If This" and search for "Discord". When clicking on "Discord" it will want you to authorize the IFTTT bot on the server you want for the script. Afterwards click on the only trigger option the discord service gives you. Then select the channel and server category you want this script to be active on. After that click on "Then That" and search for your storage service(I used OneDrive). It will have to login authorize to your account. Afterwards select "create text file" and for the filename put "shutdown" and add the file path you want the file to save to. You can make the content whatever you want. Select "Create Action". After all of that setup, go to your windows explorer and enter the directory of your synced file manager. Then pin a post on the select server you want setup up on IFTTT and give it a bit to create the folders and files. Make sure to refresh the folder. If your still waiting after 30 minutes your not going to be able to do this script successfully. If your file is successfull, put the .bat file ,found in the current repo folder, into the same directory that "shutdown" is in. Afterwards you should be able to run the script and let it do its thing.<br />
+<h3>What does this script do?</h3>
+This script executes a shutdown command to your computer when a server message gets pinned.</br >
 <br />
 <img src="https://capsule-render.vercel.app/api?type=rect&color=ffffff&height=100&section=header&text=Anything%20I%20Post%20On%20Github%20Is OpenSource&fontSize=40&fontColor=07ff1a" /></img>
 
