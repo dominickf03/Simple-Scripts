@@ -1,0 +1,1 @@
+Get-NetRoute | where {$_.DestinationPrefix -eq '0.0.0.0/0'} | select { $_.NextHop }
