@@ -1,4 +1,21 @@
 @echo off
+if not exist gdg.ps1 goto noa
+if not exist rp.vbs goto nob
+goto llp
+
+:noa
+cls
+echo File "gdg.ps1" Not Found! To use this script, download "gdg.ps1" and put it in the directory the script is in.
+pause
+exit
+:nob
+cls
+echo File "rp.vbs" Not Found! To use this script, download "rp.vbs" and put it in the directory the script is in.
+pause
+exit
+
+
+:llp
 @setlocal enableextensions
 @cd /d "%~dp0"
 echo %CD%
@@ -122,6 +139,7 @@ timeout 15
 goto getipmac
 
 :haschanged
+title MITM Attack Detected!!!
 echo --------------------------------------------- >> arpData/detectionLog.txt
 echo %date%     %time%  >> arpData/detectionLog.txt
 echo IP Def:%ipaddressvalue%  Att:%gatewaylol%  >> arpData/detectionLog.txt
