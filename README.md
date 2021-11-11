@@ -28,5 +28,5 @@ Sign up for IFTTT at https://ifttt.com/, then goto My Applets on the IFTTT dashb
 <h3>What does this script do?</h3>
 This script executes a shutdown command to your computer when a server message gets pinned.</br >
 <br />
-<img src="https://capsule-render.vercel.app/api?type=rect&color=ffffff&height=100&section=header&text=Anything%20I%20Post%20On%20Github%20Is OpenSource&fontSize=40&fontColor=07ff1a" /></img>
+<img src="https://capsule-render.vercel.app/api?type=rect&color=ffffff&height=100&section=header&text=Anything%20I%20Post%20On%20Github%20Is%20Free%20To%20Use%20And%20Modify&fontSize=30&fontColor=07ff1a" /></img>
 
