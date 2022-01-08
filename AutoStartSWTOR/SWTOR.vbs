@@ -1,4 +1,4 @@
-'This script opens Star Wars The Old Republic, types in the password, logs in, and enters the game.
+'This script opens Star Wars The Old Republic(from steam), types in the password, logs in, and enters the game.
 'You can create a shortcut from this vbs file and put an icon on it for looks. I added the default icon in this folder.
 'Make sure to have the "remember this account" checkbox selected to make sure it doesn't make you put the username in. 
 
